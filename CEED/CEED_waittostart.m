@@ -19,9 +19,9 @@ Screen('BlendFunction', window, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 [screenXpixels, screenYpixels] = Screen('WindowSize', window);
 [xCenter, yCenter] = RectCenter(windowRect);
 
-Screen('TextSize', window, 60);
+Screen('TextSize', window, 45);
 Screen('TextFont', window, 'Times');
-DrawFormattedText(window, [WrapString('You will be first shown a face, then another face will appear with a shape around it. Respond to the prompt using the left and right arrows, respectively. Answer as quickly and accurately as possible as you have limited time to respond.',50) '\n\n\nPress  ' eqorcar '  to begin'], 'center', 'center', white);
+DrawFormattedText(window, [WrapString('This task is to answer the prompt as accurately and as quickly as possible. A face will appear on one side of the screen. Another face with a shape around it will appear on the other side of the screen with a prompt below it. \n\nThe four prompts are:',55) WrapString('\n Match Shape: match the shape presented',50) WrapString('\n Even or Odd: how many sides the shape has',50) WrapString('\n Match Face: match the person''s face with their own face',50) WrapString('\n Match Emotion: match the person''s face with the face expressing the same emotion',50) WrapString('\n\n Two choices are: \n The left option: use your left index finger on the left arrow key to respond \n The right option: use your right index finger on the right arrow key to respond') '\n\nPress  ' eqorcar '  to begin'], 'center', 'center', white);
 Screen('Flip', window);
 
 KbName('UnifyKeyNames');

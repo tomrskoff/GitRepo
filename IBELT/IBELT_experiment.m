@@ -41,7 +41,7 @@ Screen('BlendFunction', window, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 
 Screen('TextSize', window, 60);
 Screen('TextFont', window, 'Times');
-DrawFormattedText(window, [WrapString('Choose the name that best matches the face presented using the left and right arrows to choose the left or right name, respectively. This is not a memory task, so answer as quickly as possible as you have limited time to respond.',50) '\n\n\nPress ' eqorcar ' to begin'], 'center', 'center', white);
+DrawFormattedText(window, [WrapString('This task is to choose a name that best fits a person''s face as quickly as possible. Some faces and some names may be repeated, but this is NOT a memory task. There is no right or wrong answer. ',50) '\n\n' WrapString('You have two choices for each face: \n Press the right arrow key with your right pointer finger to select the name on the right \n Press the left arrow key with your left pointer finger to select the name on the left.',45) '\n\nPress ' eqorcar ' to begin'], 'center', 'center', white);
 
 for i = 1:256
     s{i,:} = KbName(i); %#ok

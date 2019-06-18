@@ -10,7 +10,7 @@ Screen('BlendFunction', window, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 
 Screen('TextSize', window, 50);
 Screen('TextFont', window, 'Times');
-DrawFormattedText(window, [WrapString('Choose the box that the face appears in by pressing 1, 2, 3, or 4, respectively. Answer as quickly as possible. Use your right hand to respond.\n\n Place Index on 1, Middle on 2, Ring on 3, Pinky on 4',50) '\n\n Press ' eqorcar ' to begin'], 'center', 'center', white);
+DrawFormattedText(window, [WrapString('This task is to respond to the face''s position by clicking the correct key as quickly as possible. Please use your right hand to respond.\n\nThere are four places the face may appear:',48) WrapString('\n Box 1 (left most): to respond, select the 1/! key with your right pointer finger',55) WrapString('\n Box 2: to respond, select the 2/@ key with your right middle finger',50) WrapString('\n Box 3: to respond, select the 3/# key with your right ring finger',50) WrapString('\n Box 4 (right most): to respond, select the 4/$ key with your right pinky finger',50) '\n\n Press ' eqorcar ' to begin'], 'center', 'center', white);
 Screen('Flip', window);
 KbName('UnifyKeyNames');
 

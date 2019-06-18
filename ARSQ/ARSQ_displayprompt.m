@@ -9,16 +9,16 @@ end
 for i = 1:N 
     a = ARSQ_item(i);
     Screen('TextSize', window, 80);
-    DrawFormattedText(window, WrapString(a{1},30),'center',screenYpixels*0.5, [1 1 1]);
+    DrawFormattedText(window, WrapString(a{1},20),'center',screenYpixels*0.30, [1 1 1]);
     DrawFormattedText(window,'1',x_locs(1),screenYpixels*0.75, [1 1 1]);
     DrawFormattedText(window,'2',x_locs(2),screenYpixels*0.75, [1 1 1]);
     DrawFormattedText(window,'3',x_locs(3),screenYpixels*0.75, [1 1 1]);
     DrawFormattedText(window,'4',x_locs(4),screenYpixels*0.75, [1 1 1]);
     DrawFormattedText(window,'5',x_locs(5),screenYpixels*0.75, [1 1 1]);
-    Screen('TextSize', window, 50);
-    DrawFormattedText(window,'Strongly\nDisagree',x_locs(1)-screenXpixels*.05,screenYpixels*0.85, [1 1 1]);
-    DrawFormattedText(window,'Neutral','center',screenYpixels*0.85, [1 1 1]);
-    DrawFormattedText(window,'Strongly\nAgree',x_locs(5)-screenXpixels*.05,screenYpixels*0.85, [1 1 1]);
+    Screen('TextSize', window, 40);
+    DrawFormattedText(window, WrapString('Strongly\nDisagree',10),x_locs(1)-screenXpixels*.05,screenYpixels*0.85, [1 1 1]);
+    DrawFormattedText(window, WrapString('Neutral',10),'center',screenYpixels*0.85, [1 1 1]);
+    DrawFormattedText(window,WrapString('Strongly\nAgree',10),x_locs(5)-screenXpixels*.05,screenYpixels*0.85, [1 1 1]);
     
     Screen('Flip', window);
     

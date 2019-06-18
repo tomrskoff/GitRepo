@@ -14,7 +14,7 @@ Screen('BlendFunction', window, 'GL_SRC_ALPHA', 'GL_ONE_MINUS_SRC_ALPHA');
 
 Screen('TextSize', window, 60);
 Screen('TextFont', window, 'Times');
-DrawFormattedText(window, [WrapString('Now several statements will follow regarding potential feelings and thoughts you may have experienced during the resting period. Please indicated the extent to which you agree with each statement.',50) '\n\n\nPress any key to begin'], 'center', 'center', white);
+DrawFormattedText(window, [WrapString('Now several statements will follow regarding potential feelings and thoughts you may have experienced during the resting period. Please indicated the extent to which you agree with each statement.',40) '\n\n\nPress any key to begin'], 'center', 'center', white);
 Screen('Flip', window);
 
 KbName('UnifyKeyNames');

@@ -12,7 +12,7 @@ function ARSQ(subID, handedness)
 % scores as defined in the paper.
 
 %% -------- EXAMPLE --------
-% ARSQ('900723', 'right');
+%ARSQ('900723', 'right');
 
 %% -------- FUNCTION --------
 % show directions
